@@ -6,7 +6,7 @@ function App() {
   const [author, setAuthor] = useState('');
 
   useEffect(() => {
-    fetch('http://api.quotable.io/random')
+    fetch('https://api.quotable.io/random')
       .then((res) => res.json())
       .then((quote) => {
         setQuote(quote.content);
@@ -15,7 +15,7 @@ function App() {
   }, []);
 
   let fetchNewQuote = () => {
-    fetch('http://api.quotable.io/random')
+    fetch('https://api.quotable.io/random')
       .then((res) => res.json())
       .then((quote) => {
         setQuote(quote.content);
@@ -34,7 +34,11 @@ function App() {
       <button id='new-quote' className='btn' onClick={fetchNewQuote}>
         New Quote
       </button>
-      <a href='twitter.com/intent/tweet' id='tweet-quote' target='_blank'>
+      <a
+        href='https://twitter.com/intent/tweet'
+        id='tweet-quote'
+        target='_blank'
+      >
         Tweet Quote
       </a>
     </div>
