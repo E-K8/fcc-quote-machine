@@ -1,42 +1,37 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed&display=swap');
+
+.container {
+  min-height: 100vh;
+  background-color: #f3f7f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.quote {
+  font-size: 2rem;
+  font-family: 'Lobster', cursive;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.author {
+  font-size: 1.5rem;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  height: 2rem;
+  width: 7rem;
+  font-size: 1rem;
+  color: azure;
+  margin: 0.5rem;
+  background-color: blueviolet;
+  transition: 0.3s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.btn:hover {
+  box-shadow: 0 0 0 1px white, 0 0 0 2px blueviolet, 0 0 0 5px blueviolet,
+    0 0 0 6.5px white, 0 0 0 7px blueviolet;
+  border-radius: 100px;
+  background: none;
+  color: blueviolet;
 }
