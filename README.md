@@ -1,10 +1,10 @@
-# [Task](task.md)
+## Random quote machine
 
-A project built towards the Front End Development Libraries certification from freeCodeCamp
+### [Task](task.md)
 
-The app uses the [Quotable api](http://api.quotable.io/random)
+#### [Deployment](https://ek8-fcc-random-quote.netlify.app)
 
-[Deployment](#)
+#### The app uses the [Quotable api](http://api.quotable.io/random)
 
 To run locally:
 
